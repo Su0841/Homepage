@@ -1,0 +1,182 @@
+/*--------------OTHER-----------------------*/
+
+/*making sure that the page and the body take up the whole page (so that the flex box in <main> can work)*/
+html, body {
+    height: 100%;
+}
+
+/*------------------------------------------*/
+
+
+/*-----------------HEADER------------------*/
+
+/*the style and the animation of the 2 logos of header*/
+#logo_1 {
+    position: absolute;
+    left: 25px;
+    animation: for_1 10s 1s;
+}
+
+@keyframes for_1 {
+    0%    {transform: rotate(0deg); left: 25px;}
+    25%   {transform :rotate(50deg); left: 560px;}
+    50%   {transform: rotate(0deg); left: 560px;}
+    75%   {transform :rotate(-50deg); left: 25px;}
+    100%  {transform: rotate(0deg); left: 25px;}
+}
+
+#logo_2 {
+    position: absolute;
+    right: 25px;
+    animation: for_2 10s 1s;
+}
+
+@keyframes for_2 {
+    0%    {transform: rotate(0deg); right: 25px;}
+    25%   {transform :rotate(-50deg); right: 540px;}
+    50%   {transform: rotate(0deg); right: 540px;}
+    75%   {transform :rotate(50deg); right: 25px;}
+    100%  {transform: rotate(0deg); right: 25px;}
+}
+/*they are pretty similar (only different being the position)*/
+
+
+/*the links to the other pages*/
+li > a {
+    transition: transform 0.6s ease-in-out;
+}
+
+li > a:hover {
+    transform: translateY(-8px);
+}
+/*make them have a little animation when hover (kinda bad tho)*/
+
+
+/*text that appear when the logo'animations are done*/
+nav > h2 {
+    display: inline;
+    position: absolute;
+    color: black;
+    animation: out_of_nowhere 3s 5.5s linear forwards;
+}
+
+@keyframes out_of_nowhere {
+    0%    {color: black;}
+    50%   {color: gray;}
+    100%  {color: white;}
+}
+/*--------------END-OF-HEADER------------------*/
+
+
+/*-----------------MAIN------------------*/
+
+/*the whole main content (the one you will spend the most time on and is not the header nor footer) will be split in half: priority and secondary*/
+.flex-container {
+    display: flex;
+    background-color: white;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+/*priority content (the left/bigger side)*/
+#priority {
+    color: black;
+    background-color: white;
+    text-align: start;
+    flex-grow: 8;
+    flex-basis: 80%;
+    padding-top: 85px;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+/*every chapters of priority will be 50px apart*/
+#priority > div {
+    margin-bottom: 50px;
+}
+
+/*every chapters's declarations will have the same style*/
+#priority > div > h2 {
+    border-bottom: 5px solid black;
+    font-weight: bolder;
+}
+
+/*every parts of a list will be easily discernable*/
+#priority li {
+    padding-top: 30px;
+    font-size: large;
+}
+
+/*---------------------------TO-IMPORT--------------------------*/
+/*the 3 images display*/
+.which_is_correct {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: white;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*any images within the body*/
+#background img {
+    width: 280px;
+    height: 350px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#sample_of_cs50 img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 380px;
+    height: 280px;
+}
+
+/*---------------------------TO-IMPORT--------------------------*/
+
+/*secondary content (the right/smaller side)*/
+#secondary {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    flex-grow: 2;
+    flex-basis: 20%;
+    padding-top: 55px;
+    text-align: center;
+}
+
+#secondary p {
+    font-size: 25px;
+}
+
+#secondary a {
+    color: white;
+}
+/*------------------------------------END-OF-MAIN----------------------------------------*/
+
+
+/*-------------------------------------FOOTER-------------------------------------------*/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer > ul {
+    list-style-type: none;
+}
+
+footer li {
+    font-size: 16px;
+}
+/*---------------------------------END-OF-FOOTER---------------------------*/
+
+
+

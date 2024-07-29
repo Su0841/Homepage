@@ -1,0 +1,28 @@
+HTML:
+1.<meta>
+2.<link>
+3.<script>
+4.<nav>
+5.<a>
+6.<img>
+7.<ul>
+8.<li>
+9.<div>
+10.<main>
+
+
+CSS:
+1.position
+2.right
+3.left
+4.transition
+5.transform
+
+Javascript:
+I used javascript for 2 things:
+- First being checking for all the checkboxes in the home page (or index.html) and changing the image and play music if all of them are checked.
+- Secondly, making a password page to validate user's input for the documentation page (if you see this message, the password is "cs50" but in reversed)
+
+Bootstrap:
+- I used it to make the nav bar that is everywhere in the webpage.
+- It also provided me with easy ways to make the download button for the docs.

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="../styles/index.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center fixed-top">
+                <h2 style="left: 250px">From CS50</h2>
+                <a id="logo_1" class="navbar-brand" href="#">
+                    <img src="../images/cat51.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../pages/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/about_me.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cs50.html">CS50</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/password.html">Documentation</a>
+                    </li>
+                </ul>
+                <h2 style="right: 250px">with love</h2>
+                <a id="logo_2" class="navbar-brand" href="#">
+                    <img src="../images/me_dog.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+                </a>
+            </nav>
+        </header>
+
+        <main class="flex-container">
+            <div id="priority">
+                <div id="introduction">
+                    <h2>Introduction</h2>
+                    <ul>
+                        <li>Welcome strangers, parents, siblings, friends, enemies and most importantly, CS50's staff and students. I am Minh, the creator and owner of this webpage.</li>
+                        <li>The purpose of the website you are seeing here is to help me expand my web development's skills, which revoles around 3 core languages: HTML, CSS and Javascript.</li>
+                        <li>
+                            <div style="display: flex; width: 100%; height: 100%">
+                                <div style="flex-grow: 3; flex-basis: 50%">
+                                    <dl>
+                                        <dt style="font-weight: normal; padding-bottom: 19.5px;">In order to achieve my goal, I need to implement these basic features that are present on every page of the internet:</dt>
+                                        <dd>
+                                            <input type="checkbox" id="link_task">
+                                            <label for="link_task">From one page I can link to other pages either in my website or on the internet.</label>
+                                        </dd>
+                                        <dd>
+                                            <input type="checkbox" id="media_task">
+                                            <label for="link_task">Include multiple medias in my webpage (either images, videos or audios).</label>
+                                        </dd>
+                                        <dd>
+                                            <input type="checkbox" id="input_task">
+                                            <label for="link_task">Have a form of sort where I can take user's input (texts/numbers or the like).</label>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div id="images_field" style="flex-grow: 1; flex-basis: 30%; align-self: flex-start; display: none;">
+                                    <img id="images_gif" src="../images/siuuu_award.gif" style="width: 280px; height: 250px;">
+                                    <video id="images_music" src="../sounds/my_heart_stereo.mp4" style="display: none;"></video>
+                                </div>
+                            </div>
+                        </li>
+                        <li>And so, I will have in total of 4 pages (including this one) to fufill all of the aforementioned tasks (if you see any of these tasks completed, tick on the checkbox before the task's description. There will be a reward for when they are all ticked!!!). Which firstly is.....!!!</li>
+                    </ul>
+                </div>
+
+                <div id="home">
+                    <h2>Home</h2>
+                    <ul>
+                        <li>You are literally <a href="#introduction">here</a>.</li>
+                    </ul>
+                </div>
+
+                <div id="about me">
+                    <h2>About me</h2>
+                    <ul>
+                        <li>Where you can find a little more about me.</li>
+                        <li>That includes name, where I'm from, academic background, hobbies, future goals and information releated to CS50.</li>
+                        <li>It also a place to more easily obtain my contact information (don't be shy if you want to have a chat with me!!!).</li>
+                    </ul>
+                </div>
+
+                <div id="cs50">
+                    <h2>CS50</h2>
+                    <ul>
+                        <li>For people who is interested in the CS50 course of Havard University.</li>
+                        <li>You can find an in-depth explaination about CS50 like what it is, how it works, what the course focuses on,...</li>
+                        <li>I also provided a glimpse of CS50 so you can have better view of the course.</li>
+                    </ul>
+                </div>
+
+                <div id="documentation">
+                    <h2>Documentation</h2>
+                    <ul>
+                        <li>If you are a CS50's student or just someone who is just learning programming generally, this page is dedicated for you.</li>
+                        <li>You can find all of the docs, notes, comments, codes,... releated to this project down to the smallest of details.</li>
+                        <li>But to ensure the <a href="https://cs50.harvard.edu/x/2024/honesty/">academic honesty</a> policy, you must have a password that I provided in order to acces the aforementioned document (You can contact me <a href="../pages/about_me.html#contact me">here</a>).</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="secondary">
+                <div style="flex-grow: 2; flex-basis: 20%;">
+                    <h1>Chapters</h1>
+                </div>
+
+                <div style="flex-grow: 4.5; flex-basis: 45%;">
+                    <p><a href="#introduction">Introduction</a></p>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#about me">About me</a></p>
+                    <p><a href="#cs50">CS50</a></p>
+                    <p><a href="#documentation">Documentation</a></p>
+                </div>
+
+                <div style="flex-grow: 3; flex-basis: 30%;">
+                    <dl style="font-size: 25px;">
+                        <dt style="font-weight: normal;">Contact me at:</dt>
+                        <dd>- <a href="https://www.reddit.com/user/whyyoulookingnames/">Reddit</a></dd>
+                        <dd>- <a href="../pages/about_me.html#discord">Discord</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li>All &copy;opyright belongs to the original owner</li>
+                <li>UMID: &part;&prod;&empty;&Gamma;&reg;&clubs;&cup;&cong;&otimes;&nabla;&sum;&trade;</li>
+            </ul>
+        </footer>
+
+        <script src="../scripts/index.js"></script>
+    </body>
+</html>
